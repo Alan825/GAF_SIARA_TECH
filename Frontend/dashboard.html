@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Notas Fiscais</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Painel de Notas Fiscais</h1>
+        <nav>
+            <a href="index.html">Vendas</a>
+            <a href="dashboard.html">Painel</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Resultados de Vendas</h2>
+        <div class="grafico-container">
+            <canvas id="vendasChart"></canvas>
+        </div>
+
+        <hr>
+
+        <h2>Notas Fiscais Emitidas</h2>
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Comprador</th>
+                        <th>Valor Total</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaNotasBody">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

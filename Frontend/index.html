@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gerador de Comprovante de Venda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Comprovante de Venda</h1>
+  <a href="dashboard.html" class="dashboard-link">Ir para o Dashboard</a>
+
+  <!-- Lista de produtos -->
+  <div class="container" id="produtos"></div>
+
+  <!-- Nota Fiscal -->
+  <div class="nota" id="notaFiscal">
+    <h2>Nota Fiscal</h2>
+
+    <div class="campos-comprador">
+      <label for="nomeProdutor">Nome do Produtor</label>
+      <input type="text" id="nomeProdutor" placeholder="Seu nome" />
+      <label for="nomeComprador">Nome do Comprador</label>
+      <input type="text" id="nomeComprador" placeholder="Nome do Cliente" />
+    </div>
+
+    <p id="data-hora"></p>
+    <ul id="listaNota"></ul>
+    <h3>Total: R$ <span id="valorTotal">0.00</span></h3>
+    <button id="downloadBtn">Finalizar</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
