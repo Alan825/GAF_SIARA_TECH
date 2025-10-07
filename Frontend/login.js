@@ -17,9 +17,9 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 
     if (response.ok) {
       alert(data.mensagem);
-      // Salva o token de autenticação no armazenamento local
+      
       localStorage.setItem('token', data.token); 
-      window.location.href = 'index.html';
+      window.location.href = '/index.html';
     } else {
       alert(data.mensagem);
     }

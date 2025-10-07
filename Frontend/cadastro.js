@@ -17,10 +17,10 @@ document.getElementById('cadastroForm').addEventListener('submit', async functio
     const data = await response.json();
 
     if (response.ok) {
-      alert(data.mensagem); // "Usuário cadastrado com sucesso!"
-      window.location.href = 'login.html'; // Redireciona para a página de login
+      alert(data.mensagem); 
+      window.location.href = 'login.html'; 
     } else {
-      alert(data.mensagem); // "E-mail já cadastrado." ou "Erro ao cadastrar usuário."
+      alert(data.mensagem); 
     }
 
   } catch (error) {
