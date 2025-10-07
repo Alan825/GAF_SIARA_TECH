@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
   const senha = document.getElementById('senha').value;
 
   try {
-    const response = await fetch('http://localhost:3000/login', {
+    const response = await fetch('http://localhost:64235/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -19,7 +19,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
       alert(data.mensagem);
       
       localStorage.setItem('token', data.token); 
-      window.location.href = '/index.html';
+      window.location.href = 'index.html';
     } else {
       alert(data.mensagem);
     }

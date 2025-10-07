@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 async function carregarNotasFiscais() {
     const token = localStorage.getItem('token');
     try {
-        const response = await fetch('http://localhost:3000/notas', {
+        const response = await fetch('http://localhost:64235/notas', {
             headers: {
                 'Authorization': token
             }
@@ -86,7 +86,7 @@ function gerarGraficos(notas) {
 async function downloadNota(notaId) {
     const token = localStorage.getItem('token');
     try {
-        const response = await fetch(`http://localhost:3000/get-nota/${notaId}`, {
+        const response = await fetch(`http://localhost:64235/get-nota/${notaId}`, {
             headers: {
                 'Authorization': token
             }
