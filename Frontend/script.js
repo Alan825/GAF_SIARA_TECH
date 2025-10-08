@@ -132,7 +132,7 @@ async function finalizarCompra() {
   });
 
   try {
-      const response = await fetch('http://localhost:64235/salvar-nota', {
+      const response = await fetch('http://localhost:3000/salvar-nota', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
